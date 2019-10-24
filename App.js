@@ -1,14 +1,18 @@
 import React from 'react';
 import {StatusBar, StyleSheet, View} from 'react-native';
 import AppContainer from './routes';
+import {Provider} from 'react-redux';
+import store from './app/redux/store';
 
 export default class App extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
-        <StatusBar barStyle="dark-content" />
-        <AppContainer />
-      </View>
+      <Provider store={store}>
+        <View style={styles.container}>
+          <StatusBar barStyle="dark-content" />
+          <AppContainer />
+        </View>
+      </Provider>
     );
   }
 }

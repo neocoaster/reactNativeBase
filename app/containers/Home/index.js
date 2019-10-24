@@ -1,6 +1,10 @@
 import React from 'react';
 import {View, Text, Button, StyleSheet} from 'react-native';
-// import PropTypes from 'prop-types';
+import {connect} from 'react-redux';
+import {bindActionCreators} from 'redux';
+import PropTypes from 'prop-types';
+
+import * as appActions from '../../redux/actions/appActions';
 
 class Home extends React.Component {
   render() {
@@ -9,12 +13,16 @@ class Home extends React.Component {
         <Text>Home Screen</Text>
         <Button
           title="Go to Details"
-          onPress={() => this.props.navigation.navigate('Details')}
+          onPress={() => this.props.navigation.navigate('Home')}
         />
       </View>
     );
   }
 }
+
+Home.propTypes = {
+  variable: PropTypes.string.isRequired,
+};
 
 const styles = StyleSheet.create({
   container: {
@@ -24,4 +32,19 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Home;
+const mapStateToProps = state => ({
+  variable: state.appReducer.toJS().variable,
+});
+
+const mapDispatchToProps = dispatch => {
+  const {setVariable} = bindActionCreators(appActions, dispatch);
+
+  return {
+    setVariable,
+  };
+};
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(Home);
