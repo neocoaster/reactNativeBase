@@ -1,0 +1,31 @@
+{
+  "presets": [
+    "module:metro-react-native-babel-preset"
+  ],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": "./src",
+        "alias": {
+          "components": "./src/components",
+          "context": "./src/context",
+          "hoc": "./src/hoc",
+          "navigation": "./src/navigation",
+          "utils": "./src/utils"
+        },
+        "cwd": "packagejson"
+      }
+    ],
+    [
+      "import-graphql"
+    ]
+  ],
+  "env": {
+    "development": {
+      "plugins": [
+        "inline-dotenv"
+      ]
+    }
+  }
+}
