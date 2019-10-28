@@ -3,7 +3,7 @@ import {View, Text, Button, StyleSheet} from 'react-native';
 import {createAppContainer} from 'react-navigation';
 import {createStackNavigator} from 'react-navigation-stack';
 
-import HomeScreen from './app/containers/Home/index';
+import HomeScreen from './src/containers/Home/index';
 
 class DetailsScreen extends React.Component {
   render() {
