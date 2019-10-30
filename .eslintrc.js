@@ -4,4 +4,11 @@ module.exports = {
     'jest': false
   },
   extends: '@react-native-community',
+  plugins: ['detox'],
+  env: {
+     'browser': true,
+     'detox/detox': true,
+     'es6': true,
+     'node': true,
+   },
 };
