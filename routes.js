@@ -4,6 +4,7 @@ import {createAppContainer} from 'react-navigation';
 import {createStackNavigator} from 'react-navigation-stack';
 
 import HomeScreen from './src/containers/Home/index';
+import Camera from './src/containers/Camera/index';
 
 class DetailsScreen extends React.Component {
   render() {
@@ -23,6 +24,7 @@ const RootStack = createStackNavigator(
   {
     Home: HomeScreen,
     Details: DetailsScreen,
+    Camera: Camera,
   },
   {
     initialRouteName: 'Home',
