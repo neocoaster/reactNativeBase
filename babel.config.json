@@ -8,17 +8,11 @@
       {
         "root": "./src",
         "alias": {
-          "components": "./src/components",
-          "context": "./src/context",
-          "hoc": "./src/hoc",
-          "navigation": "./src/navigation",
+          "redux": "./src/redux",
           "utils": "./src/utils"
         },
         "cwd": "packagejson"
       }
-    ],
-    [
-      "import-graphql"
     ]
   ],
   "env": {

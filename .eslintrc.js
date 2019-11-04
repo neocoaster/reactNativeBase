@@ -1,7 +1,8 @@
 module.exports = {
   root: true,
   globals: {
-    'jest': false
+    'jest': false,
+    'jasmine': false,
   },
   extends: '@react-native-community',
   plugins: ['detox'],
