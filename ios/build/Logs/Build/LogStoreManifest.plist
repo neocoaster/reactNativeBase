@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>6FCCE81D-0877-4D78-9DF0-3A72896918F2</key>
+		<key>5ED3F0F2-1E17-4938-8E0D-8E889420C90D</key>
 		<dict>
 			<key>className</key>
 			<string>IDECommandLineBuildLog</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>6FCCE81D-0877-4D78-9DF0-3A72896918F2.xcactivitylog</string>
+			<string>5ED3F0F2-1E17-4938-8E0D-8E889420C90D.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -32,13 +32,13 @@
 			<key>signature</key>
 			<string>Building workspace reactNativeBase with scheme reactNativeBase and configuration Debug</string>
 			<key>timeStartedRecording</key>
-			<real>594149808.26050103</real>
+			<real>594584441.26671302</real>
 			<key>timeStoppedRecording</key>
-			<real>594149815.45941401</real>
+			<real>594584442.43454802</real>
 			<key>title</key>
 			<string>Building workspace reactNativeBase with scheme reactNativeBase and configuration Debug</string>
 			<key>uniqueIdentifier</key>
-			<string>6FCCE81D-0877-4D78-9DF0-3A72896918F2</string>
+			<string>5ED3F0F2-1E17-4938-8E0D-8E889420C90D</string>
 		</dict>
 	</dict>
 </dict>

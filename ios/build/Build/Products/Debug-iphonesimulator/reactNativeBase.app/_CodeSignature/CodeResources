@@ -6,11 +6,11 @@
 	<dict>
 		<key>Base.lproj/LaunchScreen.nib/objects-13.0+.nib</key>
 		<data>
-		252bE3f2mu0SEOYXfs8Gh7+DSeM=
+		I3gEvupRhBKUtuUHvsLYHXNsXXc=
 		</data>
 		<key>Base.lproj/LaunchScreen.nib/runtime.nib</key>
 		<data>
-		Oo16cBZ9//kr+waX9PxV0ut10GY=
+		5EgJKeskc3zrbIEEez89cuQ5twM=
 		</data>
 		<key>Frameworks/XCTAutomationSupport.framework/Info.plist</key>
 		<data>
@@ -75,7 +75,7 @@
 		</data>
 		<key>PlugIns/reactNativeBaseTests.xctest.dSYM/Contents/Resources/DWARF/reactNativeBaseTests</key>
 		<data>
-		4+sz7YoR2dPiluY6VYGNMCE6MVI=
+		pW1P/RABPSgc1NPVbVk5CzmJGnI=
 		</data>
 		<key>PlugIns/reactNativeBaseTests.xctest/Info.plist</key>
 		<data>
@@ -87,7 +87,7 @@
 		</data>
 		<key>PlugIns/reactNativeBaseTests.xctest/reactNativeBaseTests</key>
 		<data>
-		9uY+wJ+PhEK+vH7m15MV+6U7Sx4=
+		0Ipy7AUf8KL+VuxcnbIDSkBqy7U=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -96,22 +96,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			252bE3f2mu0SEOYXfs8Gh7+DSeM=
+			I3gEvupRhBKUtuUHvsLYHXNsXXc=
 			</data>
 			<key>hash2</key>
 			<data>
-			oYkB8+yftazSVEG0oq+uBM/EP+qbguZdh0bu6zX722U=
+			aCdNa1aVQxTPCkkNVEoAkhDV29Z7xQS0YJf34SW7+Ds=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Oo16cBZ9//kr+waX9PxV0ut10GY=
+			5EgJKeskc3zrbIEEez89cuQ5twM=
 			</data>
 			<key>hash2</key>
 			<data>
-			ARXrHwjPIMTVK/QdYrVSc5HwCDmy4U/mtDbump/guKo=
+			li2llseqnARP2FHb6waViFOQthYbYjFw1bA2Bob0kjs=
 			</data>
 		</dict>
 		<key>Frameworks/XCTAutomationSupport.framework/Info.plist</key>
@@ -252,11 +252,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4+sz7YoR2dPiluY6VYGNMCE6MVI=
+			pW1P/RABPSgc1NPVbVk5CzmJGnI=
 			</data>
 			<key>hash2</key>
 			<data>
-			+WbHPsvezXS6xKMXevQC0xGInuJOg63pe6Gf9b/OPZM=
+			eZe98J3dAmeSC7+WJPMhZKWXDHO328lZ++ju743KLn8=
 			</data>
 		</dict>
 		<key>PlugIns/reactNativeBaseTests.xctest/Info.plist</key>
@@ -285,11 +285,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9uY+wJ+PhEK+vH7m15MV+6U7Sx4=
+			0Ipy7AUf8KL+VuxcnbIDSkBqy7U=
 			</data>
 			<key>hash2</key>
 			<data>
-			uCTUkBznAPK8ZN3mSXyIUW7mWm2tMExplgjD2iSFwSU=
+			RXxwIxXA1wS/Y95FSjB9YiOEdCPnL4TcyNnIniGIcLU=
 			</data>
 		</dict>
 	</dict>

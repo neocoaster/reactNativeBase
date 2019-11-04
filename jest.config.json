@@ -19,6 +19,10 @@
     "/jest"
   ],
   "moduleFileExtensions": ["js", "json", "jsx", "ts", "tsx", "node"],
+  "testMatch": [
+    "<rootDir>/__tests__/*.test.js",
+    "<rootDir>/src/**/*.test.js"
+  ],
   "globals": {
     "window": {}
   }

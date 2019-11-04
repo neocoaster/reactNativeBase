@@ -69,3 +69,14 @@ A unified permissions API for React Native on iOS and Android.
 #### Link: https://egghead.io/lessons/react-native-add-redux-to-an-existing-react-native-application
 #### Installation:
       -npm install --save redux && npm install --save react-redux
+
+## Testing
+
+### Unit Testing: Jest
+It's included in React Native.  
+To create tests, create a '.test.js' file in '__tests__' or anywhere inside src.
+To execute the tests, run the command 'yarn test'.
+
+### End to End Testing: detox
+To create tests, create a '.spec.js' file in 'e2e'.
+#### Note: Detox library doesn't support RN 0.61 and Android.
