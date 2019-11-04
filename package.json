@@ -7,7 +7,8 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest --config ./jest.config.json",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "postinstall": "npx jetify"
   },
   "dependencies": {
     "immutable": "^4.0.0-rc.12",
@@ -52,9 +53,9 @@
       },
       "android.emu.debug": {
         "binaryPath": "android/app/build/outputs/apk/debug/app-debug.apk",
-          "build": "cd android ; ./gradlew assembleDebug assembleAndroidTest -DtestBuildType=debug ; cd -",
-          "type": "android.emulator",
-          "name": "Galaxy_Nexus_API_22"
+        "build": "cd android ; ./gradlew assembleDebug assembleAndroidTest -DtestBuildType=debug ; cd -",
+        "type": "android.emulator",
+        "name": "Galaxy_Nexus_API_22"
       },
       "android.emu.release": {
         "binaryPath": "android/app/build/outputs/apk/release/app-release.apk",
