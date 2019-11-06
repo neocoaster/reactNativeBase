@@ -41,13 +41,3 @@ target 'reactNativeBase' do
 
   use_native_modules!
 end
-
-target 'reactNativeBase-tvOS' do
-  # Pods for reactNativeBase-tvOS
-
-  target 'reactNativeBase-tvOSTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-end

@@ -1,0 +1,25 @@
+{
+  "presets": [
+    "module:metro-react-native-babel-preset"
+  ],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": "./src",
+        "alias": {
+          "redux": "./src/redux",
+          "utils": "./src/utils"
+        },
+        "cwd": "packagejson"
+      }
+    ]
+  ],
+  "env": {
+    "development": {
+      "plugins": [
+        "inline-dotenv"
+      ]
+    }
+  }
+}
