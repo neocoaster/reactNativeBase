@@ -32,11 +32,10 @@ Lets you import environment variables from a .env file in React Native, without 
 
 ### react-native-gesture-handler, react-native-reanimated, react-native-screens, react-navigation-stack
   Needed for the correct installation of react-navigation.    
-    react-native-gesture-handler provides native-driven gesture management APIs for building best possible touch-based.  
-    react-native-reanimated provides comprehensive, low level abstraction for the Animated library API  
-    react-native-screens provides native navigation container components to React Native. It's not designed to be used as a standalone library but rather as a dependency of a  
-  full featured navigation library(react-navigation).  
-    react-navigation-stack is a Stack navigator used in react-navigation  
+    **react-native-gesture-handler** provides native-driven gesture management APIs for building best possible touch-based.  
+    **react-native-reanimated** provides comprehensive, low level abstraction for the Animated library API  
+    **react-native-screens** provides native navigation container components to React Native. It's not designed to be used as a standalone library but rather as a dependency of a full featured navigation library(react-navigation).  
+    **react-navigation-stack** is a Stack navigator used in react-navigation  
 
 #### Installation:
     -yarn add react-native-reanimated && react-native-gesture-handler && react-native-screens@^1.0.0-alpha.23 && yarn add react-navigation-stack
@@ -68,4 +67,22 @@ A unified permissions API for React Native on iOS and Android.
 ### redux && react-redux:
 #### Link: https://egghead.io/lessons/react-native-add-redux-to-an-existing-react-native-application
 #### Installation:
-      -npm install --save redux && npm install --save react-redux
+      npm install --save redux && npm install --save react-redux
+
+## Testing
+
+### Unit Testing: Jest
+It's included in React Native.  
+To create tests, create a **.test.js** file in **__tests__** or anywhere inside src.
+To execute the tests, run the command 'yarn test'.
+
+### End to End Testing: detox
+#### Installation:
+You will need to install **applesimutils** and **detox command line tools**(detox-cli).
+ ```  
+brew install applesimutils  
+npm install -g detox-cli
+ ```
+To execute the tests, run de command  ``` detox test --c ios.sim.debug ```   
+To create tests, create a **.spec.js** file in **e2e**.
+#### Note: Detox library doesn't support RN 0.61 and Android.

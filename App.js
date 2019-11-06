@@ -2,7 +2,7 @@ import React from 'react';
 import {StatusBar, StyleSheet, View} from 'react-native';
 import AppContainer from './routes';
 import {Provider} from 'react-redux';
-import store from './app/redux/store';
+import store from './src/redux/store';
 
 export default class App extends React.Component {
   render() {
