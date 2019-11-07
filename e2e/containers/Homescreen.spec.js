@@ -1,4 +1,4 @@
-describe('Example', () => {
+describe('HomeScreen flow', () => {
   beforeEach(async () => {
     await device.reloadReactNative();
   });

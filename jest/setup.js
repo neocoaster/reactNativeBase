@@ -27,5 +27,5 @@ jest.mock('react-navigation', () => ({
 
 jest.mock('react-navigation-stack', () => ({
   Header: {},
-  createStackNavigator: () => {},
+  createStackNavigator: jest.fn(),
 }));

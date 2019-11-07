@@ -70,7 +70,6 @@ Camera.displayName = 'Camera';
 
 Camera.propTypes = {
   callback: PropTypes.func,
-  label: PropTypes.string.isRequired,
   options: PropTypes.object, // Everything RNCamera accepts
 };
 
