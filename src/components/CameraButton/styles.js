@@ -6,11 +6,9 @@ export default StyleSheet.create({
   button: {
     backgroundColor: '#6457f5',
     borderRadius: 5,
-    height: 40,
+    height: heightPercentageToDP('6%'),
     alignItems: 'center',
     justifyContent: 'center',
-    position: 'absolute',
-    bottom: 0,
     width: widthPercentageToDP('100%'),
   },
 
@@ -18,5 +16,14 @@ export default StyleSheet.create({
     color: 'white',
     fontSize: heightPercentageToDP('3%'),
     fontWeight: '400',
+  },
+
+  ButtonContainer: {
+    width: widthPercentageToDP('100%'),
+    height: heightPercentageToDP('6%'),
+    flexDirection: 'row',
+    position: 'absolute',
+    bottom: 0,
+    backgroundColor: 'transparent',
   },
 });
