@@ -42,6 +42,8 @@ target 'reactNativeBase' do
 
   pod 'react-native-cameraroll', :path => '../node_modules/@react-native-community/cameraroll'
 
+  pod 'react-native-image-picker', :path => '../node_modules/react-native-image-picker'
+
   target 'reactNativeBaseTests' do
     inherit! :search_paths
     # Pods for testing
