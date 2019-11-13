@@ -4,9 +4,9 @@ import { shallow } from 'enzyme';
 
 import Details from 'containers/Details';
 
-import { getNavigation } from '../utils/index';
+import { getNavigation } from '../../utils/index';
 
-import store from '../../src/redux/store';
+import store from '../../../src/redux/store';
 
 describe('rendering', () => {
   let wrapper;

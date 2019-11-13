@@ -23,6 +23,7 @@ export const heightPercentageToDP = heightPercent => {
 export const checkPermissions = (permission, navigation) => {
   check(permission)
     .then(result => {
+      console.log("RESULT", result, typeof result);
       switch (result) {
         case RESULTS.UNAVAILABLE:
           console.log(
@@ -34,10 +35,8 @@ export const checkPermissions = (permission, navigation) => {
           console.log(
             'The permission has not been requested / is denied but requestable',
           );
-          console.log('IM HERE');
           request(permission)
             .then(res => {
-              console.log('THE RESULT HAS BEEN: ', res);
               if (res !== 'granted') {
                 navigation.goBack();
               }

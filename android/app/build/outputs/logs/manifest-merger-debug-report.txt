@@ -5,6 +5,7 @@ INJECTED from /Users/neocoastsrl/Desktop/reactNativeBase/android/app/src/main/An
 INJECTED from /Users/neocoastsrl/Desktop/reactNativeBase/android/app/src/main/AndroidManifest.xml:1:1-29:12
 INJECTED from /Users/neocoastsrl/Desktop/reactNativeBase/android/app/src/main/AndroidManifest.xml:1:1-29:12
 MERGED from /Users/neocoastsrl/Desktop/reactNativeBase/android/app/src/main/AndroidManifest.xml:1:1-29:12
+MERGED from [:react-native-image-picker] /Users/neocoastsrl/Desktop/reactNativeBase/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-21:12
 MERGED from [:@react-native-community_cameraroll] /Users/neocoastsrl/Desktop/reactNativeBase/node_modules/@react-native-community/cameraroll/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-camera] /Users/neocoastsrl/Desktop/reactNativeBase/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:2:1-18:12
 MERGED from [:react-native-gesture-handler] /Users/neocoastsrl/Desktop/reactNativeBase/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
@@ -109,6 +110,8 @@ application
 ADDED from /Users/neocoastsrl/Desktop/reactNativeBase/android/app/src/main/AndroidManifest.xml:9:5-27:19
 MERGED from /Users/neocoastsrl/Desktop/reactNativeBase/android/app/src/main/AndroidManifest.xml:9:5-27:19
 MERGED from /Users/neocoastsrl/Desktop/reactNativeBase/android/app/src/main/AndroidManifest.xml:9:5-27:19
+MERGED from [:react-native-image-picker] /Users/neocoastsrl/Desktop/reactNativeBase/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-19:19
+MERGED from [:react-native-image-picker] /Users/neocoastsrl/Desktop/reactNativeBase/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-19:19
 MERGED from [com.facebook.react:react-native:0.61.2] /Users/neocoastsrl/.gradle/caches/transforms-2/files-2.1/cdbff7ccd1456dc96948cfbb29a9bd5b/jetified-react-native-0.61.2/AndroidManifest.xml:11:5-20
 MERGED from [com.facebook.react:react-native:0.61.2] /Users/neocoastsrl/.gradle/caches/transforms-2/files-2.1/cdbff7ccd1456dc96948cfbb29a9bd5b/jetified-react-native-0.61.2/AndroidManifest.xml:11:5-20
 MERGED from [com.google.android.gms:play-services-vision:17.0.2] /Users/neocoastsrl/.gradle/caches/transforms-2/files-2.1/ce5593dbda0d5b4ec3b44ad87a2e2d82/play-services-vision-17.0.2/AndroidManifest.xml:7:5-20
@@ -185,6 +188,8 @@ uses-sdk
 INJECTED from /Users/neocoastsrl/Desktop/reactNativeBase/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/neocoastsrl/Desktop/reactNativeBase/android/app/src/main/AndroidManifest.xml
 INJECTED from /Users/neocoastsrl/Desktop/reactNativeBase/android/app/src/main/AndroidManifest.xml
+MERGED from [:react-native-image-picker] /Users/neocoastsrl/Desktop/reactNativeBase/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-image-picker] /Users/neocoastsrl/Desktop/reactNativeBase/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:@react-native-community_cameraroll] /Users/neocoastsrl/Desktop/reactNativeBase/node_modules/@react-native-community/cameraroll/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:@react-native-community_cameraroll] /Users/neocoastsrl/Desktop/reactNativeBase/node_modules/@react-native-community/cameraroll/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-camera] /Users/neocoastsrl/Desktop/reactNativeBase/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:5:5-7:41
@@ -317,6 +322,22 @@ uses-permission#android.permission.WRITE_EXTERNAL_STORAGE;
 ADDED from /Users/neocoastsrl/Desktop/reactNativeBase/android/app/src/debug/AndroidManifest.xml:8:5-81
 	android:name
 		ADDED from /Users/neocoastsrl/Desktop/reactNativeBase/android/app/src/debug/AndroidManifest.xml:8:22-79
+provider#com.imagepicker.FileProvider
+ADDED from [:react-native-image-picker] /Users/neocoastsrl/Desktop/reactNativeBase/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:10:9-18:20
+	android:grantUriPermissions
+		ADDED from [:react-native-image-picker] /Users/neocoastsrl/Desktop/reactNativeBase/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-47
+	android:authorities
+		ADDED from [:react-native-image-picker] /Users/neocoastsrl/Desktop/reactNativeBase/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:13-60
+	android:exported
+		ADDED from [:react-native-image-picker] /Users/neocoastsrl/Desktop/reactNativeBase/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-37
+	android:name
+		ADDED from [:react-native-image-picker] /Users/neocoastsrl/Desktop/reactNativeBase/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-56
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [:react-native-image-picker] /Users/neocoastsrl/Desktop/reactNativeBase/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-17:58
+	android:resource
+		ADDED from [:react-native-image-picker] /Users/neocoastsrl/Desktop/reactNativeBase/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:17-55
+	android:name
+		ADDED from [:react-native-image-picker] /Users/neocoastsrl/Desktop/reactNativeBase/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:17-67
 uses-feature#android.hardware.camera
 ADDED from [:react-native-camera] /Users/neocoastsrl/Desktop/reactNativeBase/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:11:5-13:36
 	android:required

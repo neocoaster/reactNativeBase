@@ -1,6 +1,6 @@
-import {StyleSheet} from 'react-native';
+import { StyleSheet } from 'react-native';
 
-import {heightPercentageToDP, widthPercentageToDP} from '../../utils/index';
+import { heightPercentageToDP, widthPercentageToDP } from '../../utils/index';
 
 export default StyleSheet.create({
   ButtonContainer: {
@@ -29,6 +29,6 @@ export default StyleSheet.create({
     color: '#ffffff',
     fontWeight: 'bold',
     textTransform: 'uppercase',
-    fontSize: heightPercentageToDP('2%'),
+    fontSize: widthPercentageToDP('4%'),
   },
 });

@@ -11,6 +11,8 @@ This project contains a basic configuration which can be used for any project.
 -react-navigation  
 -react-navigation-stack  
 -redux && react-redux  
+-react-native-camera
+-react-native-image-picker
 
 ### react-native-clean-project:
 It is used to clean the app. You can erase the node_modules, watchman data, android build, IOS podfile, IOS build
@@ -56,19 +58,91 @@ Routing and navigation for your React Native apps.
 A unified permissions API for React Native on iOS and Android.
 #### Link: https://github.com/react-native-community/react-native-permissions
 #### Installation:
-      -npm install --save react-native-permissions  
-      -IOS:  
-        -Add specific pods you want based on the permissions you need  
-        Example: pod 'Permission-Camera', :path => "#{permissions_path}/Camera.podspec"  
-      -ANDROID:
-        -Add all wanted permissions to your app android/app/src/main/AndroidManifest.xml file:  
-        Example: <uses-permission android:name="android.permission.CAMERA" />  
+```
+npm install --save react-native-permissions
+```
+
+**IOS:**
+-Add specific pods you want based on the permissions you need  
+Example:
+```
+pod 'Permission-Camera', :path => "#{permissions_path}/Camera.podspec"
+```
+Then update the Info.plist file with the permissions you need.
+Example:
+```
+<key>NSCameraUsageDescription</key>
+<string>YOUR TEXT</string>
+```
+**ANDROID:**
+-Add all wanted permissions to your app android/app/src/main/AndroidManifest.xml file:  
+Example:
+```
+<uses-permission android:name="android.permission.CAMERA" />
+```
 
 ### redux && react-redux:
 #### Link: https://egghead.io/lessons/react-native-add-redux-to-an-existing-react-native-application
 #### Installation:
       npm install --save redux && npm install --save react-redux
 
+### react-native-camera:
+A Camera component for React Native, which also supports barcode scanning.
+#### Link: https://github.com/react-native-community/react-native-camera
+#### Installation:
+```
+npm i react-native-camera
+```
+**IOS:**:
+in Info.plist add the following code
+```
+<key>NSCameraUsageDescription</key>
+<string>Your message to user when the camera is accessed for the first time</string>
+
+<!-- Include this only if you are planning to use the camera roll -->
+<key>NSPhotoLibraryUsageDescription</key>
+<string>Your message to user when the photo library is accessed for the first time</string>
+
+<!-- Include this only if you are planning to use the microphone for video recording -->
+<key>NSMicrophoneUsageDescription</key>
+<string>Your message to user when the microphone is accessed for the first time</string>
+
+<!-- Include this only if you are planning to use the camera roll -->
+<key>NSPhotoLibraryAddUsageDescription</key>
+<string>Your message to user when the photo library is accessed for the first time</string>
+```
+
+**ANDROID:** in AndroidManifest add
+ ```
+ <uses-permission android:name="android.permission.CAMERA" />
+ ```
+
+### react-native-image-picker:
+A React Native module that allows you to use native UI to select a photo/video from the device library or directly from the camera.
+#### Link: https://github.com/react-native-community/react-native-image-picker
+#### Installation:
+```
+npm i react-native-image-picker
+```
+**IOS:**
+in Info.plist add the following code
+```
+<key>NSPhotoLibraryUsageDescription</key>
+<string>$(PRODUCT_NAME) would like access to your photo gallery</string>
+<key>NSCameraUsageDescription</key>
+<string>$(PRODUCT_NAME) would like to use your camera</string>
+<key>NSPhotoLibraryAddUsageDescription</key>
+<string>$(PRODUCT_NAME) would like access to your photo gallery to change your profile picture
+Android</string>
+<key>NSMicrophoneUsageDescription</key>
+<string>$(PRODUCT_NAME) would like to use your microphone (for videos)</string>
+```
+**ANDROID:**
+In AndroidManifest add the following code
+```
+<uses-permission android:name="android.permission.CAMERA" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+```
 ## Testing
 
 ### Unit Testing: Jest
