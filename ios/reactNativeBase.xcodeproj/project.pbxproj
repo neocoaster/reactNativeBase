@@ -390,6 +390,7 @@
 			baseConfigurationReference = FCED7464A171EC5E7272BE8F /* Pods-reactNativeBaseTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				DEVELOPMENT_TEAM = ZM38GV6ZY4;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -414,6 +415,7 @@
 			baseConfigurationReference = CED8D3E9205927335ED10A9E /* Pods-reactNativeBaseTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				COPY_PHASE_STRIP = NO;
 				DEVELOPMENT_TEAM = ZM38GV6ZY4;
 				INFOPLIST_FILE = reactNativeBaseTests/Info.plist;

@@ -1,4 +1,5 @@
 # Xcode
+ios/build
 !**/*.xcodeproj
 !**/*.pbxproj
 !**/*.xcworkspacedata
@@ -44,7 +45,6 @@ buck-out
 .gradle
 local.properties
 *.iml
-/android/
 
 # Node
 node_modules
@@ -130,7 +130,7 @@ buck-out
 .gradle
 local.properties
 *.iml
-/android/
+/android/app/build
 
 # Node
 node_modules
