@@ -25,13 +25,17 @@
     "react-navigation": "^4.0.10",
     "react-navigation-stack": "^1.10.2",
     "react-redux": "^7.1.1",
-    "redux": "^4.0.4"
+    "redux": "^4.0.4",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.13.0",
+    "eslint-plugin-react-native": "^3.7.0"
   },
   "devDependencies": {
     "@babel/core": "^7.6.4",
     "@babel/preset-env": "^7.6.3",
     "@babel/runtime": "^7.6.3",
-    "@react-native-community/eslint-config": "^0.0.5",
     "babel-jest": "^24.9.0",
     "detox": "^14.6.0",
     "enzyme": "^3.10.0",

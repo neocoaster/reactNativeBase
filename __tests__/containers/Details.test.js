@@ -1,18 +1,18 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import {shallow} from 'enzyme';
+import { shallow } from 'enzyme';
 
 import Details from 'containers/Details';
 
-import {getNavigation} from '../utils/index';
+import { getNavigation } from '../utils/index';
 
 import store from '../../src/redux/store';
 
 describe('rendering', () => {
   let wrapper;
   let newWrapper;
-  let props = {
-    store: store,
+  const props = {
+    store,
     ...getNavigation(),
   };
 

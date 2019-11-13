@@ -1,5 +1,5 @@
-import React, {Fragment} from 'react';
-import {RNCamera} from 'react-native-camera';
+import React, { Fragment } from 'react';
+import { RNCamera } from 'react-native-camera';
 import PropTypes from 'prop-types';
 
 import Button from '../../components/Button';
@@ -16,7 +16,7 @@ class Camera extends React.Component {
   }
 
   takePicture = async () => {
-    const {callback, options} = this.props;
+    const { callback, options } = this.props;
 
     let res;
 
@@ -44,7 +44,7 @@ class Camera extends React.Component {
   };
 
   render() {
-    const {pictureTaken} = this.state;
+    const { pictureTaken } = this.state;
 
     return (
       <Fragment>

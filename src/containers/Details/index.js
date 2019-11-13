@@ -1,8 +1,9 @@
 import React from 'react';
-import {Text, Button, View} from 'react-native';
+import { Text, Button, View } from 'react-native';
+import PropTypes from 'prop-types';
 
-import {bindActionCreators} from 'redux';
-import {connect} from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
 
 import * as appActions from '../../redux/actions/appActions';
 
@@ -23,12 +24,16 @@ class Details extends React.Component {
   }
 }
 
+Details.propTypes = {
+  navigation: PropTypes.object.isRequired,
+};
+
 const mapStateToProps = state => ({
   variable: state.appReducer.toJS().variable,
 });
 
 const mapDispatchToProps = dispatch => {
-  const {setVariable} = bindActionCreators(appActions, dispatch);
+  const { setVariable } = bindActionCreators(appActions, dispatch);
 
   return {
     setVariable,
