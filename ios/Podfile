@@ -44,6 +44,8 @@ target 'reactNativeBase' do
 
   pod 'react-native-image-picker', :path => '../node_modules/react-native-image-picker'
 
+  pod 'RNPermissions', :path => '../node_modules/react-native-permissions'
+
   target 'reactNativeBaseTests' do
     inherit! :search_paths
     # Pods for testing

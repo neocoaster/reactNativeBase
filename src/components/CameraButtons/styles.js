@@ -1,6 +1,6 @@
-import {StyleSheet} from 'react-native';
+import { StyleSheet } from 'react-native';
 
-import {heightPercentageToDP, widthPercentageToDP} from '../../utils/index';
+import { heightPercentageToDP, widthPercentageToDP } from '../../utils/index';
 
 export default StyleSheet.create({
   button: {

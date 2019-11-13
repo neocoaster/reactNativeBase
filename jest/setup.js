@@ -30,6 +30,25 @@ jest.mock('react-navigation-stack', () => ({
   createStackNavigator: jest.fn(),
 }));
 
+jest.mock('react-native-permissions', () => ({
+  PERMISSIONS: {
+    IOS: {
+      PHOTO_LIBRARY: true,
+    },
+    ANDROID: {
+      WRITE_EXTERNAL_STORAGE: true,
+      READ_EXTERNAL_STORAGE: true,
+    },
+  },
+  check: jest.fn().mockResolvedValue(Promise.resolve('granted')),
+  request: jest.fn().mockResolvedValue(Promise.resolve('granted')),
+}));
+
+jest.mock('react-native-image-picker', () => ({
+  launchImageLibrary: jest.fn(),
+}));
+
 jest.mock('react-native-share', () => ({
   open: jest.fn(),
 }));
+

@@ -8,8 +8,9 @@ import { PERMISSIONS } from 'react-native-permissions';
 
 import { checkPermissions } from '../../utils/index';
 
-import CameraButton from '../../components/CameraButton';
+import CameraButtons from '../../components/CameraButtons';
 import Gallery from '../../components/Gallery';
+import ImagePicker from 'react-native-image-picker';
 
 import styles from './styles';
 
@@ -79,15 +80,19 @@ class Camera extends React.Component {
   };
 
   openGallery = () => {
-    console.log('ENTRE A OPEN GALLERY');
-    CameraRoll.getPhotos({
-      first: 20,
-      assetType: 'Photos',
-    })
-      .then(r => {
-        console.log(r);
-      })
-      .catch(() => {});
+    const galleryOptions = {
+      title: 'Select Avatar',
+      customButtons: [{ name: 'fb', title: 'Choose Photo from Facebook' }],
+      storageOptions: {
+        skipBackup: true,
+        path: 'images',
+      },
+    };
+
+    ImagePicker.launchImageLibrary(galleryOptions, () => {
+      // Response is an object with the following fields:
+      // ["height", "fileSize", "data", "path", "uri", "timestamp", "longitude", "width", "type", "fileName", "isVertical", "originalRotation", "latitude"]
+    });
   };
 
   render() {
@@ -107,7 +112,7 @@ class Camera extends React.Component {
 
         {!pictureTaken && <Gallery onPress={this.openGallery} />}
 
-        <CameraButton
+        <CameraButtons
           label={pictureTaken ? 'Take again' : 'Take picture'}
           onPress={pictureTaken ? this.erasePicture : this.takePicture}
           saveToCameraRoll={pictureTaken ? this.saveToCameraRoll : () => {}}

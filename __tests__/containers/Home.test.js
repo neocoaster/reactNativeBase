@@ -5,7 +5,7 @@ import { shallow } from 'enzyme';
 
 import Home from 'containers/Home';
 
-import { getNavigation } from '../utils/index';
+import { getNavigation } from '../../utils/index';
 
 describe('rendering', () => {
   let wrapper;
