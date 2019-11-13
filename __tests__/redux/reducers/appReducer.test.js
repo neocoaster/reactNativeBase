@@ -1,4 +1,4 @@
-import reducer, {initialState} from 'Redux/reducers/appReducer';
+import reducer, { initialState } from 'Redux/reducers/appReducer';
 import * as actions from 'Redux/actions/appActions';
 
 describe('app reducer', () => {

@@ -1,15 +1,15 @@
 import 'react-native';
 import React from 'react';
 import renderer from 'react-test-renderer';
-import {shallow} from 'enzyme';
+import { shallow } from 'enzyme';
 
 import Home from 'containers/Home';
 
-import {getNavigation} from '../utils/index';
+import { getNavigation } from '../utils/index';
 
 describe('rendering', () => {
   let wrapper;
-  let props = {
+  const props = {
     ...getNavigation(),
   };
 

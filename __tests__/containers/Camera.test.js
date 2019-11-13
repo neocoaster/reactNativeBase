@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import {shallow} from 'enzyme';
+import { shallow } from 'enzyme';
 
 import { getNavigation } from '../utils/index';
 
@@ -8,7 +8,7 @@ import Camera from 'containers/Camera';
 
 describe('rendering', () => {
   let wrapper;
-  let props = {
+  const props = {
     ...getNavigation(),
   };
 

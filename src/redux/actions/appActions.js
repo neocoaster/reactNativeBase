@@ -1,4 +1,4 @@
-import {SET_VARIABLE} from './constants';
+import { SET_VARIABLE } from './constants';
 
 export function setVariable(variable) {
   return {
