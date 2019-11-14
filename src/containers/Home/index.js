@@ -46,9 +46,9 @@ class Home extends React.Component {
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.button}
-          id="Camera"
-          testID="Camera"
-          title="Go to Camera"
+          id="Sharesheet"
+          testID="Sharesheet"
+          title="Enter Sharesheet"
           onPress={() => this.shareMultipleImages()}
         >
           <Text style={styles.text}>Open Sharesheet</Text>

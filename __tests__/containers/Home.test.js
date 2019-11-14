@@ -21,8 +21,8 @@ describe('rendering', () => {
     renderer.create(<Home {...props} />);
   });
 
-  it('should contain 2 TouchableOpacity', () => {
-    expect(wrapper.find('TouchableOpacity')).toHaveLength(2);
+  it('should contain 3 TouchableOpacity', () => {
+    expect(wrapper.find('TouchableOpacity')).toHaveLength(3);
   });
 
   describe('clicking the button should redirect to Details', () => {
