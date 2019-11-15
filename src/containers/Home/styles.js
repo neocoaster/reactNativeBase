@@ -9,7 +9,7 @@ export default StyleSheet.create({
 
   button: {
     marginTop: 20,
-    width: 120,
+    width: 160,
     height: 40,
     alignItems: 'center',
     justifyContent: 'center',

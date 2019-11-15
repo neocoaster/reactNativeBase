@@ -29,3 +29,7 @@ jest.mock('react-navigation-stack', () => ({
   Header: {},
   createStackNavigator: jest.fn(),
 }));
+
+jest.mock('react-native-share', () => ({
+  open: jest.fn(),
+}));
