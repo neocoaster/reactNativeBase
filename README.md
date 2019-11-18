@@ -13,7 +13,8 @@ This project contains a basic configuration which can be used for any project.
 -redux && react-redux  
 -react-native-camera  
 -react-native-image-picker  
--react-native-share
+-react-native-share  
+-react-native-animatable
 
 ### react-native-clean-project:
 It is used to clean the app. You can erase the node_modules, watchman data, android build, IOS podfile, IOS build
@@ -156,7 +157,13 @@ npm install react-native-share --save
 ```
 cd ios && pod install
 ```
-
+### react-native-animatable:
+Declarative transitions and animations for React Native
+#### Link: https://github.com/oblador/react-native-animatable
+#### Installation:
+```
+npm install react-native-animatable --save
+```
 ## Testing
 
 ### Unit Testing: Jest

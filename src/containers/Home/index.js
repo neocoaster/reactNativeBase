@@ -27,13 +27,13 @@ class Home extends React.Component {
       <View style={styles.container}>
         <Text>Home Screen</Text>
         <TouchableOpacity
-          id="Details"
-          testID="Details"
+          id="Animations"
+          testID="Animations"
           style={styles.button}
-          title="Go to Camera"
-          onPress={() => this.props.navigation.navigate('Details')}
+          title="Go to Animations"
+          onPress={() => this.props.navigation.navigate('Animations')}
         >
-          <Text style={styles.text}>Go to Details</Text>
+          <Text style={styles.text}>Go to Animation </Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.button}

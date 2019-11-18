@@ -39,7 +39,7 @@
   ],
   "rules": {
     "react-native/split-platform-components": 2,
-    "no-undef": 1,
+    "no-undef": 2,
     "no-undefined": 0,
     "react/jsx-no-undef": 2,
     "semi": 2,
