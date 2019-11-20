@@ -3,6 +3,7 @@ import { createStackNavigator } from 'react-navigation-stack';
 
 import HomeScreen from './src/containers/Home/index';
 import Camera from './src/containers/Camera/index';
+import RNWebView from './src/containers/RNWebView/index';
 import Animations from './src/containers/Animations/index';
 
 const RootStack = createStackNavigator(
@@ -10,6 +11,7 @@ const RootStack = createStackNavigator(
     Home: HomeScreen,
     Animations,
     Camera,
+    RNWebView,
   },
   {
     initialRouteName: 'Home',

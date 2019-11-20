@@ -14,7 +14,8 @@ This project contains a basic configuration which can be used for any project.
 -react-native-camera  
 -react-native-image-picker  
 -react-native-share  
--react-native-animatable
+-react-native-animatable  
+-react-native-webview
 
 ### react-native-clean-project:
 It is used to clean the app. You can erase the node_modules, watchman data, android build, IOS podfile, IOS build
@@ -157,6 +158,7 @@ npm install react-native-share --save
 ```
 cd ios && pod install
 ```
+
 ### react-native-animatable:
 Declarative transitions and animations for React Native
 #### Link: https://github.com/oblador/react-native-animatable
@@ -164,6 +166,26 @@ Declarative transitions and animations for React Native
 ```
 npm install react-native-animatable --save
 ```
+
+### react-native-webview:
+#### Link: https://github.com/react-native-community/react-native-webview
+#### Installation:
+```
+npm install --save react-native-webview
+react-native link react-native-webview
+```
+**IOS:**
+```
+cd ios && pod install
+```
+
+**ANDROID:**
+Please verify in gradle.properties you have these 2 lines:
+```
+android.useAndroidX=true
+android.enableJetifier=true
+```
+
 ## Testing
 
 ### Unit Testing: Jest

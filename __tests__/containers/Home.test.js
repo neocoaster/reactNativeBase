@@ -22,7 +22,7 @@ describe('rendering', () => {
   });
 
   it('should contain 3 TouchableOpacity', () => {
-    expect(wrapper.find('TouchableOpacity')).toHaveLength(3);
+    expect(wrapper.find('TouchableOpacity')).toHaveLength(4);
   });
 
   describe('clicking the button should redirect to Animations', () => {
