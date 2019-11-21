@@ -46,7 +46,9 @@ target 'reactNativeBase' do
 
   pod 'RNPermissions', :path => '../node_modules/react-native-permissions'
 
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
   pod 'react-native-webview', :path => '../node_modules/react-native-webview'
+  
 
   target 'reactNativeBaseTests' do
     inherit! :search_paths
