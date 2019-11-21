@@ -15,7 +15,10 @@ This project contains a basic configuration which can be used for any project.
 -react-native-image-picker  
 -react-native-share  
 -react-native-animatable  
--react-native-webview
+-react-native-webview  
+-react-native-popup-menu  
+-react-native-cn-richtext-editor  
+-react-native-vector-icons
 
 ### react-native-clean-project:
 It is used to clean the app. You can erase the node_modules, watchman data, android build, IOS podfile, IOS build
@@ -185,6 +188,32 @@ Please verify in gradle.properties you have these 2 lines:
 android.useAndroidX=true
 android.enableJetifier=true
 ```
+
+### react-native-popup-menu:
+Extensible popup menu component for React Native
+#### Link: https://github.com/instea/react-native-popup-menu
+#### Installation:
+```
+npm install react-native-popup-menu --save
+```
+
+### react-native-cn-richtext-editor
+#### Link: https://github.com/imnapo/react-native-cn-richtext-editor
+#### Installation:
+```
+npm i react-native-cn-richtext-editor
+```
+
+### react-native-vector-icons
+#### Link: https://github.com/oblador/react-native-vector-icons
+#### Installation:
+```
+npm install --save react-native-vector-icons
+react-native link react-native-vector-icons
+```
+
+**IOS:**
+Remove From `Build Phases/Copy Bundle Resources` every UIAppFonts.
 
 ## Testing
 
