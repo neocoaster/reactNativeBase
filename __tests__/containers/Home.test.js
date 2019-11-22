@@ -25,11 +25,11 @@ describe('rendering', () => {
     expect(wrapper.find('TouchableOpacity')).toHaveLength(3);
   });
 
-  describe('clicking the button should redirect to Details', () => {
+  describe('clicking the button should redirect to Animations', () => {
     let button;
 
     beforeEach(() => {
-      button = wrapper.find('#Details');
+      button = wrapper.find('#Animations');
       button.prop('onPress')();
     });
 
