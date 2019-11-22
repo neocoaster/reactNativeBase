@@ -25,33 +25,31 @@ class TextEditor extends Component {
     this.customStyles = {
       ...defaultStyles,
       body: { fontSize: 12 },
-      heading : { fontSize: 16 },
-      title : { fontSize: 20 },
-      ol : { fontSize: 12 },
+      heading: { fontSize: 16 },
+      title: { fontSize: 20 },
+      ol: { fontSize: 12 },
       ul: { fontSize: 12 },
       bold: { fontSize: 12, fontWeight: 'bold', color: '' },
     };
 
     this.state = {
-      selectedTag : 'body',
-      selectedColor : 'default',
+      selectedTag: 'body',
+      selectedColor: 'default',
       selectedHighlight: 'default',
-      colors : ['red', 'green', 'blue'],
-      highlights:['yellow_hl', 'pink_hl', 'orange_hl', 'green_hl', 'purple_hl', 'blue_hl'],
-      selectedStyles : [],
+      colors: ['red', 'green', 'blue'],
+      highlights: ['yellow_hl', 'pink_hl', 'orange_hl', 'green_hl', 'purple_hl', 'blue_hl'],
+      selectedStyles: [],
 
       value: convertToObject('<div><p><span>This is </span><span style="font-weight: bold;">bold</span><span> and </span><span style="font-style: italic;">italic </span><span>text</span></p></div>', this.customStyles),
     };
 
     this.editor = null;
-
   }
 
     onStyleKeyPress = (toolType) => {
       if (toolType == 'image') {
         return;
-      }
-      else {
+      } else {
         this.editor.applyToolbar(toolType);
       }
     }
@@ -70,8 +68,8 @@ class TextEditor extends Component {
 
       this.setState({
         selectedStyles: styles,
-        selectedColor : (sel.length > 0) ? sel[sel.length - 1] : 'default',
-        selectedHighlight : (hl.length > 0) ? hl[hl.length - 1] : 'default',
+        selectedColor: (sel.length > 0) ? sel[sel.length - 1] : 'default',
+        selectedHighlight: (hl.length > 0) ? hl[hl.length - 1] : 'default',
       });
     }
 
@@ -82,7 +80,7 @@ class TextEditor extends Component {
     }
 
     onColorSelectorClicked = (value) => {
-      if(value === 'default') {
+      if (value === 'default') {
         this.editor.applyToolbar(this.state.selectedColor);
       } else {
         this.editor.applyToolbar(value);
@@ -94,11 +92,10 @@ class TextEditor extends Component {
     }
 
     onHighlightSelectorClicked = (value) => {
-      if(value === 'default') {
+      if (value === 'default') {
         this.editor.applyToolbar(this.state.selectedHighlight);
       } else {
         this.editor.applyToolbar(value);
-
       }
 
       this.setState({
@@ -109,7 +106,7 @@ class TextEditor extends Component {
     renderColorMenuOptions = () => {
       let lst = [];
 
-      if(defaultStyles[this.state.selectedColor]) {
+      if (defaultStyles[this.state.selectedColor]) {
         lst = this.state.colors.filter(x => x !== this.state.selectedColor);
         lst.push('default');
         lst.push(this.state.selectedColor);
@@ -119,8 +116,9 @@ class TextEditor extends Component {
       }
 
       return (
-        lst.map( (item) => {
+        lst.map((item) => {
           const color = defaultStyles[item] ? defaultStyles[item].color : 'black';
+
           return (
             <MenuOption value={item} key={item}>
               <MaterialCommunityIcons name="format-color-text" color={color} size={28} />
@@ -146,8 +144,9 @@ class TextEditor extends Component {
 
 
       return (
-        lst.map( (item) => {
+        lst.map((item) => {
           const bgColor = defaultStyles[item] ? defaultStyles[item].backgroundColor : 'black';
+
           return (
             <MenuOption value={item} key={item}>
               <MaterialCommunityIcons name="marker" color={bgColor} size={26} />
@@ -208,7 +207,7 @@ class TextEditor extends Component {
         >
           <MenuProvider style={{ flex: 1 }}>
             <TouchableWithoutFeedback onPress={Keyboard.dismiss} >
-              <View style={styles.styles.main}>
+              <View testID="ViewTextEditor" style={styles.styles.main}>
                 <CNRichTextEditor
                   ref={input => this.editor = input}
                   onSelectedTagChanged={this.onSelectedTagChanged}
@@ -324,7 +323,6 @@ class TextEditor extends Component {
         </KeyboardAvoidingView>
       );
     }
-
 }
 
 export default TextEditor;

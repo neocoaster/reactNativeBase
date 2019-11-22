@@ -1,20 +1,21 @@
-import { StyleSheet, Dimensions } from 'react-native';
+import { StyleSheet, Dimensions, Platform } from 'react-native';
+
 const { width } = Dimensions.get('window');
 
 export default {
   styles: StyleSheet.create({
     root: {
       flex: 1,
-      paddingTop: 20,
+      paddingTop: 0,
       backgroundColor:'#eee',
       flexDirection: 'column',
       justifyContent: 'flex-end',
     },
     main: {
       flex: 1,
-      marginTop: 10,
-      paddingLeft: 30,
-      paddingRight: 30,
+      marginTop: 0,
+      paddingLeft: 0,
+      paddingRight: 0,
       paddingBottom: 1,
       alignItems: 'stretch',
     },
@@ -23,6 +24,8 @@ export default {
     },
     toolbarContainer: {
       minHeight: 35,
+      backgroundColor: '#fff',
+      paddingBottom: Platform.OS === 'Android' ? 0 : 20,
     },
     menuOptionText: {
       textAlign: 'center',
@@ -33,7 +36,7 @@ export default {
       marginVertical: 0,
       marginHorizontal: 0,
       borderBottomWidth: 1,
-      borderColor: '#eee',
+      borderColor: '#fff',
     },
   }),
 
@@ -63,7 +66,6 @@ export default {
       padding: 0,
       width: 40,
       marginLeft: width - 40,
-
       alignItems: 'flex-end',
     },
     optionsWrapper: {
@@ -78,4 +80,3 @@ export default {
     },
   },
 };
-
