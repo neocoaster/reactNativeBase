@@ -6,7 +6,6 @@ import Share from 'react-native-share';
 import styles from './styles';
 
 class Home extends React.Component {
-
   shareMultipleImages = async () => {
     const shareOptions = {
       title: 'Share file',
@@ -52,6 +51,15 @@ class Home extends React.Component {
           onPress={() => this.props.navigation.navigate('RNWebView')}
         >
           <Text style={styles.text}>WebView</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={styles.button}
+          id="TextEditor"
+          testID="TextEditor"
+          title="Enter TextEditor"
+          onPress={() => this.props.navigation.navigate('TextEditor')}
+        >
+          <Text style={styles.text}>Open Text Editor</Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.button}

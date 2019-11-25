@@ -87,6 +87,7 @@
     "react/no-unused-prop-types": 2,
     "no-const-assign": 2,
     "no-empty": 2,
+    "eol-last": 2,
     "no-extra-bind": 2,
     "react/no-string-refs": 1,
     "react/no-did-mount-set-state": 1,
