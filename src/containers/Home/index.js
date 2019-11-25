@@ -46,6 +46,15 @@ class Home extends React.Component {
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.button}
+          id="RNWebView"
+          testID="RNWebView"
+          title="Go to RNWebView"
+          onPress={() => this.props.navigation.navigate('RNWebView')}
+        >
+          <Text style={styles.text}>WebView</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={styles.button}
           id="Sharesheet"
           testID="Sharesheet"
           title="Enter Sharesheet"
