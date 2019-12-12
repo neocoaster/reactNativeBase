@@ -226,6 +226,7 @@ To execute the tests, run the command 'yarn test'.
 #### Installation:
 You will need to install **applesimutils** and **detox command line tools**(detox-cli).
  ```  
+brew tap wix/brew
 brew install applesimutils  
 npm install -g detox-cli
  ```
